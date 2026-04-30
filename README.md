@@ -1,6 +1,6 @@
 # SUE BENSASSI DESIGNS
 
-![HTML](tech/html.png) ![CSS](tech/css.png) ![Javascript](tech/javascript.png) ![JQuery](tech/jquery.png) ![Bootstrap](tech/bootstrap.png) ![Python](tech/python.png) ![Django](tech/django.png) ![Heroku](tech/heroku.png) ![Postgressql](tech/postgresql.png) ![Cloudinary](tech/cloudinary.png) ![Neon](tech/neon.png) ![Gitpod](tech/gitpod.png) ![ChatGPT](tech/chatgpt.png)
+![HTML](tech/html.png) ![CSS](tech/css.png) ![Javascript](tech/javascript.png) ![JQuery](tech/jquery.png) ![Bootstrap](tech/bootstrap.png) ![Python](tech/python.png) ![Django](tech/django.png) ![Heroku](tech/heroku.png) ![Postgressql](tech/postgresql.png) ![Cloudinary](tech/cloudinary.png) ![Neon](tech/neon.png) ![Gitpod](tech/gitpod.png) ![ChatGPT](tech/chatgpt.png) ![Stripe](tech/stripe.png)
 
 
 ## 🎯 Quick Links
