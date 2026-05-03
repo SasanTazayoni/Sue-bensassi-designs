@@ -43,9 +43,9 @@
                         <div class="card cart-card">
                             <h2 class="cart-sub-header text-center sample mb-0">{{ item.product.name }}</h2>
                             {% if item.product.image %}
-                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-10">
+                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-10" loading="lazy">
                             {% else %}
-                                <img src="{% static 'images/noimage.png' %}" alt="{{ item.product.name }}" class="img-fluid rounded-10">
+                                <img src="{% static 'images/noimage.png' %}" alt="{{ item.product.name }}" class="img-fluid rounded-10" loading="lazy">
                             {% endif %}
                         </div>
                     </div>
@@ -124,7 +124,7 @@
             <!-- cart is empty -->
             <div class="container d-flex justify-content-center align-items-center flex-column">
                 <p class="lead mb-3">Your cart is empty.</p>
-                <img class="shopping-cart mb-3" src="{% static 'images/empty-cart.jpg' %}" alt="An empty shopping cart">
+                <img class="shopping-cart mb-3" loading="lazy" src="{% static 'images/empty-cart.jpg' %}" alt="An empty shopping cart">
                 <a href="{% url 'products' %}" class="button btn-info button-long d-block">
                     <i></i><i></i>
                     <span>Keep Shopping</span>

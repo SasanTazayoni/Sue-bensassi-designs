@@ -35,9 +35,9 @@
                         <div class="col-3 col-md-2 mb-1 small-grid">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
-                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    <img class="w-100" loading="lazy" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 {% else %}
-                                    <img class="w-100" src="{% static 'images/noimage.png' %}" alt="{{ item.product.name }}">
+                                    <img class="w-100" loading="lazy" src="{% static 'images/noimage.png' %}" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </div>
