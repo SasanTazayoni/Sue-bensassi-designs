@@ -5,7 +5,11 @@
     <script src="{% static 'js/quantityInput.js' %}" defer></script>
 {% endblock %}
 
-{% block extra_title %}- {{ product.name }}{% endblock %}
+{% block extra_title %}{{ product.name }} | Sue Bensassi Designs{% endblock %}
+{% block description %}{{ product.description|truncatechars:160 }}{% endblock %}
+{% block og_title %}{{ product.name }}{% endblock %}
+{% block og_description %}{{ product.description|truncatechars:200 }}{% endblock %}
+{% block og_image %}{% if product.image %}{{ product.image.url }}{% else %}{{ request.scheme }}://{{ request.get_host }}/static/images/background.jpg{% endif %}{% endblock %}
 
 {% block content %}
 <main class="plain-background">

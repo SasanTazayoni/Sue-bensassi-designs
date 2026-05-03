@@ -2,7 +2,12 @@
 {% load static %}
 {% load cart_tools %}
 
-{% block extra_title %}- Order Form{% endblock %}
+{% block meta %}
+    {{ block.super }}
+    <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
+{% block extra_title %}Checkout | Sue Bensassi Designs{% endblock %}
 
 {% block content %}
 <main class="plain-background">

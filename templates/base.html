@@ -7,13 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Discover Sue Bensassi Designs for stylish home accessories and custom gifts.
-      Explore our range of filing chests, notice boards, memo blocks, photo frames, and more. Customizable designs
-      available with a variety of fabrics. Perfect for children and adults alike. Based in the UK.">
-    <meta name="keywords" content="Sue Bensassi Designs, Home Accessories, Custom Gifts, Filing Chests,
-      Notice Boards, Memo Blocks, Photo Frames, Photo Albums, Key Holders, Home Organization, Custom Designs,
-      UK Home Accessories, Children's Gifts, Custom Fabric Designs">
+    <meta name="description" content="{% block description %}Discover Sue Bensassi Designs for stylish home accessories and custom gifts. Explore our range of filing chests, notice boards, memo blocks, photo frames, and more. Customisable designs available with a variety of fabrics. Perfect for children and adults alike. Based in the UK.{% endblock %}">
+    <meta name="keywords" content="Sue Bensassi Designs, Home Accessories, Custom Gifts, Filing Chests, Notice Boards, Memo Blocks, Photo Frames, Photo Albums, Key Holders, Home Organization, Custom Designs, UK Home Accessories, Children's Gifts, Custom Fabric Designs">
   {% endblock %}
+
+  <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:site_name" content="Sue Bensassi Designs">
+  <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+  <meta property="og:title" content="{% block og_title %}Sue Bensassi Designs — Handmade Home Accessories & Gifts{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}Discover handmade home accessories and custom gifts from Sue Bensassi Designs. Filing chests, notice boards, photo frames and more, handcrafted in West London.{% endblock %}">
+  <meta property="og:image" content="{% block og_image %}{{ request.scheme }}://{{ request.get_host }}/static/images/background.jpg{% endblock %}">
 
   {% block favicon %}
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
@@ -45,7 +50,7 @@
   {% block extra_js %}
   {% endblock %}
 
-  <title>Sue Bensassi Designs {% block extra_title %}{% endblock %}</title>
+  <title>{% block extra_title %}Sue Bensassi Designs | Handmade Home Accessories & Gifts{% endblock %}</title>
 </head>
 <body>
   <header class="container-fluid fixed-top" data-navbar>

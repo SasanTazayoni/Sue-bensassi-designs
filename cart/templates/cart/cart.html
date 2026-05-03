@@ -6,7 +6,12 @@
     <script src="{% static 'js/shoppingCartQuantities.js' %}" defer></script>
 {% endblock %}
 
-{% block extra_title %}- Cart{% endblock %}
+{% block meta %}
+    {{ block.super }}
+    <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
+{% block extra_title %}Shopping Cart | Sue Bensassi Designs{% endblock %}
 
 {% block content %}
 <main class="plain-background">
